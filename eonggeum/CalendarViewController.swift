@@ -24,14 +24,17 @@ class CalendarViewController: UIViewController {
     func UIUpdate(){
         calendarView.appearance.todayColor = UIColor(red: 7/255, green: 181/255, blue: 129/255, alpha: 1)
         calendarView.allowsSelection = true
+        
         calendarView.appearance.headerTitleColor = .black
         calendarView.appearance.weekdayTextColor = .black
         calendarView.appearance.headerTitleFont = UIFont.systemFont(ofSize: 24, weight: .bold)
-        calendarView.appearance.titleWeekendColor = UIColor(red: 7/255, green: 181/255, blue: 129/255, alpha: 1)
         calendarView.appearance.headerDateFormat = "YYYY년 M월"
-        calendarView.appearance.subtitleFont = UIFont.systemFont(ofSize: 16, weight: .medium)
+        calendarView.appearance.titleWeekendColor = UIColor(red: 7/255, green: 181/255, blue: 129/255, alpha: 1)
+        calendarView.appearance.titleFont = UIFont.systemFont(ofSize: 14, weight: .bold)
+        calendarView.appearance.subtitleFont = UIFont.systemFont(ofSize: 14, weight: .light)
         calendarView.appearance.subtitleOffset = CGPoint(x: 0, y: 3)
         calendarView.locale = Locale(identifier: "ko_KR")
+        
     }
     
 
@@ -53,4 +56,5 @@ extension CalendarViewController :FSCalendarDelegate, FSCalendarDataSource, FSCa
             return nil
         }
     }
+    
 }

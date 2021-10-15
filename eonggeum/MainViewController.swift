@@ -10,6 +10,7 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet weak var todayView: UIView!
+    @IBOutlet weak var turtleImageView: UIImageView!
     @IBOutlet weak var todayCountView: UIView!
     
     
@@ -22,6 +23,7 @@ class MainViewController: UIViewController {
 
     func updateUI(){
         todayView.layer.cornerRadius = 20
+        turtleImageView.layer.cornerRadius = 20
         todayCountView.layer.cornerRadius = 20
 //        todayCountView.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMaxXMinYCorner)
         
