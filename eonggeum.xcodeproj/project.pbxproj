@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		737C4ED71F8FD01C66139728 /* Pods_eonggeum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB4026963DBA682CE8989E /* Pods_eonggeum.framework */; };
 		980DC3F127191AA9008AE62E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 980DC3F027191AA9008AE62E /* GoogleService-Info.plist */; };
+		980DC3F42719B45C008AE62E /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DC3F32719B45C008AE62E /* TimerViewController.swift */; };
 		98809825271480FB0063DCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98809824271480FB0063DCDF /* AppDelegate.swift */; };
 		98809827271480FB0063DCDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98809826271480FB0063DCDF /* SceneDelegate.swift */; };
 		9880982C271480FB0063DCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9880982A271480FB0063DCDF /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		63CB4026963DBA682CE8989E /* Pods_eonggeum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eonggeum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		980DC3F027191AA9008AE62E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		980DC3F227191B62008AE62E /* eonggeum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eonggeum.entitlements; sourceTree = "<group>"; };
+		980DC3F32719B45C008AE62E /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		98809821271480FB0063DCDF /* eonggeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eonggeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98809824271480FB0063DCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98809826271480FB0063DCDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				9880982F271480FE0063DCDF /* LaunchScreen.storyboard */,
 				988098382714813E0063DCDF /* MainViewController.swift */,
 				98F090F527155441008B0F36 /* CalendarViewController.swift */,
+				980DC3F32719B45C008AE62E /* TimerViewController.swift */,
 				98809832271480FE0063DCDF /* Info.plist */,
 				980DC3F027191AA9008AE62E /* GoogleService-Info.plist */,
 			);
@@ -215,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980DC3F42719B45C008AE62E /* TimerViewController.swift in Sources */,
 				98F090F627155441008B0F36 /* CalendarViewController.swift in Sources */,
 				988098392714813E0063DCDF /* MainViewController.swift in Sources */,
 				98809825271480FB0063DCDF /* AppDelegate.swift in Sources */,

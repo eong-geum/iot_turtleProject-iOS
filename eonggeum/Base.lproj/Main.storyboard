@@ -8,10 +8,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Timer View Controller-->
+        <scene sceneID="1Aw-Vc-Lkv">
+            <objects>
+                <viewController storyboardIdentifier="TimerViewController" id="Hl1-KZ-K3y" customClass="TimerViewController" customModule="eonggeum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EJc-bj-abA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="스트레칭이 필요해요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RER-eF-33W">
+                                <rect key="frame" x="20" y="120" width="251" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oo5-Y9-ZSo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dmi-0t-bnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2787" y="120"/>
+        </scene>
         <!--요약-->
         <scene sceneID="Mmr-MU-RX6">
             <objects>
-                <viewController id="qjM-de-US4" customClass="MainViewController" customModule="eonggeum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="qjM-de-US4" customClass="MainViewController" customModule="eonggeum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ci-pa-sIO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +169,7 @@
         <!--Calendar View Controller-->
         <scene sceneID="LQC-IK-UDs">
             <objects>
-                <viewController id="eRB-wr-3cr" customClass="CalendarViewController" customModule="eonggeum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalendarViewController" id="eRB-wr-3cr" customClass="CalendarViewController" customModule="eonggeum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nf6-Km-3jJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +205,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0N-hd-5it" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860.8695652173915" y="136.60714285714286"/>
+            <point key="canvasLocation" x="1857" y="120"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="czd-01-mrp">
@@ -200,7 +224,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HeI-9M-WjO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="339.13043478260875" y="119.86607142857142"/>
+            <point key="canvasLocation" x="496" y="120"/>
         </scene>
     </scenes>
     <resources>

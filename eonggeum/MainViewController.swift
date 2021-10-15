@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+import NotificationCenter
+import UserNotifications
 class MainViewController: UIViewController {
 
     @IBOutlet weak var todayView: UIView!
@@ -16,9 +17,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         updateUI()
     }
+    
     
 
     func updateUI(){
@@ -28,5 +29,5 @@ class MainViewController: UIViewController {
 //        todayCountView.layer.maskedCorners = CACornerMask(arrayLiteral: .layerMinXMinYCorner, .layerMaxXMinYCorner)
         
     }
-
+    
 }
