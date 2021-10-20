@@ -9,5 +9,5 @@ target 'eonggeum' do
   pod 'FSCalendar'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
-
+  pod 'SRCountdownTimer'
 end

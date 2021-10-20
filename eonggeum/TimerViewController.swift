@@ -6,24 +6,34 @@
 //
 
 import UIKit
+import SRCountdownTimer
 
 class TimerViewController: UIViewController {
 
+    @IBOutlet weak var countdownTimer: SRCountdownTimer!
+    @IBOutlet weak var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .white
         // Do any additional setup after loading the view.
+//        setConstraints()
+        updateTimerUI()
+        updateButtonUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func updateTimerUI(){
+        countdownTimer.lineWidth = 4.0
+        countdownTimer.lineColor = UIColor(red: 43/255, green: 255/255, blue: 160/255, alpha: 1)
+        countdownTimer.trailLineColor = UIColor.lightGray.withAlphaComponent(0.5)
+        countdownTimer.isLabelHidden = false
+        countdownTimer.labelFont = UIFont.systemFont(ofSize: 80, weight: .light)
     }
-    */
-
+    private func updateButtonUI(){
+        startButton.layer.cornerRadius = 30
+        startButton.layer.backgroundColor = CGColor(red: 22/255, green: 217/255, blue: 129/255, alpha: 1)
+    }
+    @IBAction func startButtonTapped(_ sender: Any) {
+        countdownTimer.start(beginingValue: 30, interval: 1)
+    }
 }

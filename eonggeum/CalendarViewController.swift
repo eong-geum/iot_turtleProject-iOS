@@ -7,6 +7,8 @@
 
 import UIKit
 import FSCalendar
+import AVFoundation
+import AudioToolbox
 class CalendarViewController: UIViewController {
 
     @IBOutlet weak var calendarView: FSCalendar!
@@ -19,6 +21,10 @@ class CalendarViewController: UIViewController {
         calendarView.dataSource = self
         dateFormatter.dateFormat = "yyyy-MM-dd"
         UIUpdate()
+        //
+//        AudioServicesPlaySystemSound(4095)
+//        AudioServicesPlaySystemSound(1015)
+        //
     }
     
     func UIUpdate(){
