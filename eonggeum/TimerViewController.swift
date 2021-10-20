@@ -42,5 +42,6 @@ class TimerViewController: UIViewController, SRCountdownTimerDelegate {
     func timerDidEnd(sender: SRCountdownTimer, elapsedTime: TimeInterval) {
         AudioServicesPlaySystemSound(4095)
         AudioServicesPlaySystemSound(1163)
+        startButton.setTitle("다시 시작하기", for: .normal)
     }
 }
