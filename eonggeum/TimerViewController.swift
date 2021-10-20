@@ -7,6 +7,7 @@
 
 import UIKit
 import SRCountdownTimer
+import AVFoundation
 
 class TimerViewController: UIViewController, SRCountdownTimerDelegate {
 
@@ -39,6 +40,7 @@ class TimerViewController: UIViewController, SRCountdownTimerDelegate {
         countdownTimer.start(beginingValue: 10, interval: 1)
     }
     func timerDidEnd(sender: SRCountdownTimer, elapsedTime: TimeInterval) {
-        
+        AudioServicesPlaySystemSound(4095)
+        AudioServicesPlaySystemSound(1163)
     }
 }
