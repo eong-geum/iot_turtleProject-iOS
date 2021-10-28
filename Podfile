@@ -10,4 +10,5 @@ target 'eonggeum' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
   pod 'SRCountdownTimer'
+  pod 'Firebase/Database'
 end
