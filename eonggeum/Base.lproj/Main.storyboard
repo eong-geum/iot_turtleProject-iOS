@@ -63,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dmi-0t-bnA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2787" y="120"/>
+            <point key="canvasLocation" x="1181" y="858"/>
         </scene>
         <!--요약-->
         <scene sceneID="Mmr-MU-RX6">
@@ -171,7 +171,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="eRB-wr-3cr" kind="presentation" modalPresentationStyle="automatic" id="nzH-kG-wym"/>
+                                    <action selector="calendarButtonTapped:" destination="qjM-de-US4" eventType="touchUpInside" id="Z2N-2N-LDp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gV-dT-1Pa">
@@ -207,9 +207,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="요약" image="person.fill" catalog="system" id="xT9-Xz-FAK"/>
                     <connections>
+                        <outlet property="calendarButton" destination="inj-m9-BQS" id="5Fc-BY-Sta"/>
                         <outlet property="todayCountView" destination="SOv-aw-RcC" id="lEW-xR-k4n"/>
                         <outlet property="todayView" destination="maX-9U-U4S" id="sJ7-UY-VEB"/>
                         <outlet property="turtleImageView" destination="Fvy-RU-f5U" id="4Z9-5B-CLE"/>
+                        <segue destination="eRB-wr-3cr" kind="show" identifier="MainToCalendar" id="sXI-5D-Zen"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19n-dH-7oZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -255,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0N-hd-5it" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="120"/>
+            <point key="canvasLocation" x="1946" y="120"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="czd-01-mrp">
