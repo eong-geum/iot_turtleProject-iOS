@@ -37,7 +37,10 @@ class CalendarViewController: UIViewController {
         
     }
     
-
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
 extension CalendarViewController :FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelegateAppearance{
     func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {

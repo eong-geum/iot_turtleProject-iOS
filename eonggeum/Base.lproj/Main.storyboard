@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh8-7M-spv">
-                                <rect key="frame" x="344" y="50" width="40" height="40"/>
+                                <rect key="frame" x="354" y="50" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="5uh-uQ-wU1"/>
                                     <constraint firstAttribute="height" constant="40" id="K5b-6m-LRL"/>
@@ -84,7 +84,7 @@
                             <constraint firstItem="6uZ-6P-M0s" firstAttribute="centerY" secondItem="oo5-Y9-ZSo" secondAttribute="centerY" id="6PW-Ii-SmF"/>
                             <constraint firstItem="Jh8-7M-spv" firstAttribute="top" secondItem="oo5-Y9-ZSo" secondAttribute="top" constant="50" id="8aT-9Z-ceY"/>
                             <constraint firstItem="2co-El-IQk" firstAttribute="top" secondItem="6uZ-6P-M0s" secondAttribute="bottom" constant="115" id="NU1-gQ-02r"/>
-                            <constraint firstItem="oo5-Y9-ZSo" firstAttribute="trailing" secondItem="Jh8-7M-spv" secondAttribute="trailing" constant="30" id="dyh-5y-059"/>
+                            <constraint firstItem="oo5-Y9-ZSo" firstAttribute="trailing" secondItem="Jh8-7M-spv" secondAttribute="trailing" constant="20" id="dyh-5y-059"/>
                             <constraint firstItem="AvN-nm-q50" firstAttribute="top" secondItem="6uZ-6P-M0s" secondAttribute="bottom" constant="115" id="hDi-sp-lx0"/>
                             <constraint firstItem="AvN-nm-q50" firstAttribute="centerX" secondItem="oo5-Y9-ZSo" secondAttribute="centerX" constant="-90" id="qao-PZ-hYZ"/>
                             <constraint firstItem="2co-El-IQk" firstAttribute="centerX" secondItem="oo5-Y9-ZSo" secondAttribute="centerX" id="r62-Eg-S8q"/>
@@ -278,11 +278,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLO-Xh-tVW">
+                                <rect key="frame" x="354" y="50" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="b0d-gj-0He"/>
+                                    <constraint firstAttribute="width" constant="40" id="clz-Xh-V28"/>
+                                </constraints>
+                                <color key="tintColor" red="0.0" green="0.67445476429999995" blue="0.47713689860000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="xmark.circle.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="eRB-wr-3cr" eventType="touchUpInside" id="stC-eh-ieC"/>
+                                    <action selector="exitButtonTapped:" destination="Hl1-KZ-K3y" eventType="touchUpInside" id="Hfa-MQ-EyM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TcE-50-1HI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iWc-LB-GZs" firstAttribute="leading" secondItem="TcE-50-1HI" secondAttribute="leading" constant="20" id="DoB-aa-R0r"/>
+                            <constraint firstItem="TLO-Xh-tVW" firstAttribute="top" secondItem="TcE-50-1HI" secondAttribute="top" constant="50" id="MUO-fV-2MF"/>
+                            <constraint firstItem="TcE-50-1HI" firstAttribute="trailing" secondItem="TLO-Xh-tVW" secondAttribute="trailing" constant="20" id="WSM-te-Y8Y"/>
                             <constraint firstItem="iWc-LB-GZs" firstAttribute="centerX" secondItem="TcE-50-1HI" secondAttribute="centerX" id="bjb-Lj-MPN"/>
                             <constraint firstItem="iWc-LB-GZs" firstAttribute="centerY" secondItem="TcE-50-1HI" secondAttribute="centerY" id="tcX-Jr-SI3"/>
                             <constraint firstItem="TcE-50-1HI" firstAttribute="trailing" secondItem="iWc-LB-GZs" secondAttribute="trailing" constant="20" id="wMH-BX-dlK"/>
