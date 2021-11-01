@@ -86,16 +86,19 @@ extension MainViewController{
                     } else {
                         self.compareToYesterdayLabel.text = "어제보다 \(todayCntInt-yesterdayCntInt)회 줄었어요"
                     }
+
+                    print("=> ", yesterday, self.counterDic[yesterday]!)
                 } else { // yesterday 데이터가 없다면, 0으로 가정
                     self.compareToYesterdayLabel.text = "어제보다 \(todayCntInt)회 더 감지되었어요"
                 }
+                
+                print("==> ", today, self.counterDic[today]!)
             } else {
                 self.todayDetectedLabel.text = "오늘은 거북목이 감지되지 않았어요!"
+                self.compareToYesterdayLabel.text = "카메라를 키지 않았다면 카메라를 켜주세요."
             }
             
             
-            print("==> ", today, self.counterDic[today]!)
-            print("=> ", yesterday, self.counterDic[yesterday]!)
             
             
         }
