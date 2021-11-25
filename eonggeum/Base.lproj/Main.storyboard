@@ -264,6 +264,7 @@
                         <outlet property="compareToYesterdayLabel" destination="DOK-Fm-lZS" id="Ma4-r8-Dtj"/>
                         <outlet property="todayCountView" destination="SOv-aw-RcC" id="lEW-xR-k4n"/>
                         <outlet property="todayDetectedLabel" destination="J24-0n-nHF" id="6BQ-0i-wC6"/>
+                        <outlet property="todayLabel" destination="d3r-qr-sIr" id="f27-Va-Rw3"/>
                         <outlet property="todayView" destination="maX-9U-U4S" id="sJ7-UY-VEB"/>
                         <outlet property="turtleImageView" destination="Fvy-RU-f5U" id="4Z9-5B-CLE"/>
                         <segue destination="eRB-wr-3cr" kind="show" identifier="MainToCalendar" id="sXI-5D-Zen"/>

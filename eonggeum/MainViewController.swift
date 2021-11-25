@@ -17,6 +17,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var turtleImageView: UIImageView!
     @IBOutlet weak var todayCountView: UIView!
     @IBOutlet weak var calendarButton: UIButton!
+    @IBOutlet weak var todayLabel: UILabel!
     @IBOutlet weak var todayDetectedLabel: UILabel!
     @IBOutlet weak var compareToYesterdayLabel: UILabel!
     
@@ -48,6 +49,12 @@ class MainViewController: UIViewController {
     }
     
     func updateUI(){
+        // today label update
+        let labelDateFormatter = DateFormatter()
+        labelDateFormatter.dateFormat = "M월 d일"
+        let todayLabelText = labelDateFormatter.string(from: Date())
+        todayLabel.text = todayLabelText
+        
         calendarButton.isEnabled = false
         self.dateFormatter.dateFormat="yyyy-MM-dd"
         let today = self.dateFormatter.string(from: Date())
