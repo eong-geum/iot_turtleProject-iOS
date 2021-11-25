@@ -31,7 +31,7 @@ class TimerViewController: UIViewController, SRCountdownTimerDelegate {
         countdownTimer.lineColor = UIColor(red: 43/255, green: 255/255, blue: 160/255, alpha: 1)
         countdownTimer.trailLineColor = UIColor.lightGray.withAlphaComponent(0.5)
         countdownTimer.isLabelHidden = false
-        countdownTimer.labelFont = UIFont.systemFont(ofSize: 80, weight: .light)
+        countdownTimer.labelFont = UIFont.systemFont(ofSize: 100, weight: .light)
         countdownTimer.timerFinishingText = "완료!"
     }
     private func updateButtonUI(){
@@ -41,7 +41,7 @@ class TimerViewController: UIViewController, SRCountdownTimerDelegate {
         startButton.layer.backgroundColor = CGColor(red: 22/255, green: 217/255, blue: 129/255, alpha: 1)
     }
     @IBAction func startButtonTapped(_ sender: Any) {
-        countdownTimer.start(beginingValue: 10, interval: 1)
+        countdownTimer.start(beginingValue: 30, interval: 1)
         stopStateUI()
     }
     func timerDidStart(sender: SRCountdownTimer) {
