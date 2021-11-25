@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		737C4ED71F8FD01C66139728 /* Pods_eonggeum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CB4026963DBA682CE8989E /* Pods_eonggeum.framework */; };
+		90EAD66E03D16189D5E59696 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E55B77FA1ABFB4EB36F830D4 /* Pods_NotificationServiceExtension.framework */; };
 		980DC3F127191AA9008AE62E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 980DC3F027191AA9008AE62E /* GoogleService-Info.plist */; };
 		980DC3F42719B45C008AE62E /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980DC3F32719B45C008AE62E /* TimerViewController.swift */; };
+		9864F2B7274E96D6006ED156 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9864F2B6274E96D6006ED156 /* NotificationService.swift */; };
+		9864F2BB274E96D6006ED156 /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9864F2B4274E96D6006ED156 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9864F2C2274F97F8006ED156 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9864F2C1274F97F8006ED156 /* Person.swift */; };
 		98809825271480FB0063DCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98809824271480FB0063DCDF /* AppDelegate.swift */; };
 		98809827271480FB0063DCDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98809826271480FB0063DCDF /* SceneDelegate.swift */; };
 		9880982C271480FB0063DCDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9880982A271480FB0063DCDF /* Main.storyboard */; };
@@ -19,6 +23,30 @@
 		98F090F627155441008B0F36 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F090F527155441008B0F36 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9864F2B9274E96D6006ED156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98809819271480FB0063DCDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9864F2B3274E96D6006ED156;
+			remoteInfo = NotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9864F2BC274E96D6006ED156 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9864F2BB274E96D6006ED156 /* NotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1F0738F318E6D35FCCEC5DCF /* Pods-eonggeum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eonggeum.release.xcconfig"; path = "Target Support Files/Pods-eonggeum/Pods-eonggeum.release.xcconfig"; sourceTree = "<group>"; };
 		5E3EBA9C54159BC706D29A0A /* Pods-eonggeum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eonggeum.debug.xcconfig"; path = "Target Support Files/Pods-eonggeum/Pods-eonggeum.debug.xcconfig"; sourceTree = "<group>"; };
@@ -26,6 +54,10 @@
 		980DC3F027191AA9008AE62E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		980DC3F227191B62008AE62E /* eonggeum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eonggeum.entitlements; sourceTree = "<group>"; };
 		980DC3F32719B45C008AE62E /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		9864F2B4274E96D6006ED156 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9864F2B6274E96D6006ED156 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9864F2B8274E96D6006ED156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9864F2C1274F97F8006ED156 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		98809821271480FB0063DCDF /* eonggeum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eonggeum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98809824271480FB0063DCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98809826271480FB0063DCDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +67,20 @@
 		98809832271480FE0063DCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988098382714813E0063DCDF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		98F090F527155441008B0F36 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		A40EA0F23D27DA482F1B60F8 /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		E0BFE175BC6E7FFEB564CF0B /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		E55B77FA1ABFB4EB36F830D4 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9864F2B1274E96D6006ED156 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EAD66E03D16189D5E59696 /* Pods_NotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9880981E271480FB0063DCDF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,10 +92,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9864F2B5274E96D6006ED156 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9864F2B6274E96D6006ED156 /* NotificationService.swift */,
+				9864F2B8274E96D6006ED156 /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		9864F2C0274F9235006ED156 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9864F2C1274F97F8006ED156 /* Person.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		98809818271480FB0063DCDF = {
 			isa = PBXGroup;
 			children = (
 				98809823271480FB0063DCDF /* eonggeum */,
+				9864F2B5274E96D6006ED156 /* NotificationServiceExtension */,
 				98809822271480FB0063DCDF /* Products */,
 				FAF935436978E5DAB5C6664B /* Pods */,
 				D353696DDBCB03AF2AA479E5 /* Frameworks */,
@@ -63,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				98809821271480FB0063DCDF /* eonggeum.app */,
+				9864F2B4274E96D6006ED156 /* NotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +132,7 @@
 		98809823271480FB0063DCDF /* eonggeum */ = {
 			isa = PBXGroup;
 			children = (
+				9864F2C0274F9235006ED156 /* Class */,
 				980DC3F227191B62008AE62E /* eonggeum.entitlements */,
 				98809824271480FB0063DCDF /* AppDelegate.swift */,
 				98809826271480FB0063DCDF /* SceneDelegate.swift */,
@@ -89,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				63CB4026963DBA682CE8989E /* Pods_eonggeum.framework */,
+				E55B77FA1ABFB4EB36F830D4 /* Pods_NotificationServiceExtension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,6 +162,8 @@
 			children = (
 				5E3EBA9C54159BC706D29A0A /* Pods-eonggeum.debug.xcconfig */,
 				1F0738F318E6D35FCCEC5DCF /* Pods-eonggeum.release.xcconfig */,
+				E0BFE175BC6E7FFEB564CF0B /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				A40EA0F23D27DA482F1B60F8 /* Pods-NotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -105,6 +171,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9864F2B3274E96D6006ED156 /* NotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9864F2BF274E96D6006ED156 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
+			buildPhases = (
+				1A7D8B233DB18975D05C44DC /* [CP] Check Pods Manifest.lock */,
+				9864F2B0274E96D6006ED156 /* Sources */,
+				9864F2B1274E96D6006ED156 /* Frameworks */,
+				9864F2B2274E96D6006ED156 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = 9864F2B4274E96D6006ED156 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		98809820271480FB0063DCDF /* eonggeum */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98809835271480FE0063DCDF /* Build configuration list for PBXNativeTarget "eonggeum" */;
@@ -114,10 +198,12 @@
 				9880981E271480FB0063DCDF /* Frameworks */,
 				9880981F271480FB0063DCDF /* Resources */,
 				30430AA1FF505B4D83AC96CD /* [CP] Embed Pods Frameworks */,
+				9864F2BC274E96D6006ED156 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9864F2BA274E96D6006ED156 /* PBXTargetDependency */,
 			);
 			name = eonggeum;
 			productName = eonggeum;
@@ -134,6 +220,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					9864F2B3274E96D6006ED156 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					98809820271480FB0063DCDF = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -153,11 +242,19 @@
 			projectRoot = "";
 			targets = (
 				98809820271480FB0063DCDF /* eonggeum */,
+				9864F2B3274E96D6006ED156 /* NotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9864F2B2274E96D6006ED156 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9880981F271480FB0063DCDF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -172,6 +269,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1A7D8B233DB18975D05C44DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		30430AA1FF505B4D83AC96CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,10 +333,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9864F2B0274E96D6006ED156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9864F2B7274E96D6006ED156 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9880981D271480FB0063DCDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9864F2C2274F97F8006ED156 /* Person.swift in Sources */,
 				980DC3F42719B45C008AE62E /* TimerViewController.swift in Sources */,
 				98F090F627155441008B0F36 /* CalendarViewController.swift in Sources */,
 				988098392714813E0063DCDF /* MainViewController.swift in Sources */,
@@ -227,6 +355,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9864F2BA274E96D6006ED156 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9864F2B3274E96D6006ED156 /* NotificationServiceExtension */;
+			targetProxy = 9864F2B9274E96D6006ED156 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9880982A271480FB0063DCDF /* Main.storyboard */ = {
@@ -248,6 +384,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9864F2BD274E96D6006ED156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0BFE175BC6E7FFEB564CF0B /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN5JFN8NYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yoonjong.eonggeum.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9864F2BE274E96D6006ED156 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A40EA0F23D27DA482F1B60F8 /* Pods-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PN5JFN8NYT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NotificationServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yoonjong.eonggeum.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		98809833271480FE0063DCDF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E3EBA9C54159BC706D29A0A /* Pods-eonggeum.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = eonggeum/eonggeum.entitlements;
@@ -398,6 +587,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1F0738F318E6D35FCCEC5DCF /* Pods-eonggeum.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = eonggeum/eonggeum.entitlements;
@@ -427,6 +617,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9864F2BF274E96D6006ED156 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9864F2BD274E96D6006ED156 /* Debug */,
+				9864F2BE274E96D6006ED156 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9880981C271480FB0063DCDF /* Build configuration list for PBXProject "eonggeum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

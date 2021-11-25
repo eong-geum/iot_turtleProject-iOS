@@ -11,4 +11,10 @@ target 'eonggeum' do
   pod 'Firebase/Messaging'
   pod 'SRCountdownTimer'
   pod 'Firebase/Database'
+  pod 'RealmSwift', '~>10'
+end
+
+target 'NotificationServiceExtension' do
+  use_frameworks!
+  pod 'Firebase/Messaging'
 end
