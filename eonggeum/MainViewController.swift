@@ -36,15 +36,19 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "MainToCalendar", sender: sender)
     }
 
+    @IBAction func refreshButtonTapped(_ sender: Any) {
+        updateUI()
+        firebaseOperationRead()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         uid = "user1_UID" // sample test
         updateUI()
         firebaseOperationRead()
-        calendarButton.isEnabled = false
     }
     
     func updateUI(){
+        calendarButton.isEnabled = false
         self.dateFormatter.dateFormat="yyyy-MM-dd"
         let today = self.dateFormatter.string(from: Date())
         let realm = try! Realm()
