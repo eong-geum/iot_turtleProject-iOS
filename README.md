@@ -22,6 +22,8 @@ Backend – Spring, Flask (python-opencv)
 ## 스크린샷
 - 알림 화면
 <img width="500" alt="스크린샷 2021-06-22 오후 4 31 01" src="https://user-images.githubusercontent.com/29617557/152790532-816fe995-2bde-4ebd-8ade-712dee2907df.png">
+<img width="500" alt="그림1" src="https://user-images.githubusercontent.com/29617557/166117950-de54cc7f-8fae-4ddf-a67b-d90399c5acda.png">
+
 - 알림 클릭시 타이머 실행
 <img width="500" alt="스크린샷 2021-06-22 오후 4 31 44" src="https://user-images.githubusercontent.com/29617557/152790551-09813be7-ca65-4af1-8f34-fa349cba641a.png">
 - 메인 화면
