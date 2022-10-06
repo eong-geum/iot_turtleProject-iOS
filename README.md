@@ -33,23 +33,20 @@ Backend – Spring, Flask (python-opencv)
 
 ## 구현 기능
 
-- iOS는 기본적으로 Firebase Realtime Database에 저장된 데이터베이스를 불러와 정보를 뷰에 띄워주는 역할을 수행합니다. 
-- 일별로 저장된 데이터를 달력을 통해 한 눈에 볼 수 있도록 Modal을 달았습니다.
-- Firebase의 Cloud Messaging 기능을 이용하여 스프링 서버로부터 push notification을 받고, 누르면 즉시 스트레칭을 할 수 있도록 타이머 기능을 제공한다.  
-## 사용한 API
+- iOS는 기본적으로 Firebase Realtime Database에 저장된 데이터베이스를 불러와 정보를 뷰에 띄워주는 역할을 수행합니다.
 
-Google Firebase Realtime Database 
-Google Firebase Authentication 
-FCM(Firebase Cloud Messaging) Swift 
+- 일별로 저장된 데이터를 달력을 통해 한 눈에 볼 수 있도록 Modal을 달았습니다. 데이터 캐싱을 위해 Realm을 사용하였습니다.
+
+- Firebase의 Cloud Messaging 기능을 이용하여 스프링 서버로부터 push notification을 받고, 누르면 즉시 스트레칭을 할 수 있도록 타이머 기능을 제공합니다.
 
 ## 사용 라이브러리
-Firebase
-RealmSwift
-UserNotifications
-NotificationCenter
-AVFoundation
+
+Firebase(Realtime Database, Authentication, Cloud Messaging)
+
+Realm
+
 SRCountdownTimer
+
 FSCalendar
-AudioToolbox
 
 
